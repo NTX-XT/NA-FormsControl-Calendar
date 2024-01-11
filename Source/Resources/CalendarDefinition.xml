@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ControlType>
+  <Category>Input</Category>
+  <Group>Custom Controls</Group>
+  <Name>K2ANZCalendar</Name>
+  <DisplayName>K2ANZ FullCalendar</DisplayName>
+  <FullName>SourceCodeANZ.Forms.Controls.Calendar, SourceCodeANZ.Forms.Controls.Calendar</FullName>
+  <GetPropertyMethod>SourceCodeANZ.Forms.Controls.Calendar.getProperty</GetPropertyMethod>
+  <SetPropertyMethod>SourceCodeANZ.Forms.Controls.Calendar.setProperty</SetPropertyMethod>
+  <ExecuteMethod>SourceCodeANZ.Forms.Controls.Calendar.execute</ExecuteMethod>
+  <DataTypes>
+    <DataType>Text</DataType>
+  </DataTypes>
+  <Events>
+    <Event>OnChange</Event>
+    <Event>OnClick</Event>
+  </Events>
+  <Methods>
+    <Method>
+      <Name>Refresh</Name>
+      <DisplayName>Refresh</DisplayName>
+      <Description>Refresh Data</Description>
+    </Method>
+    <Method ResultType="Text">
+      <Name>GoToDate</Name>
+      <DisplayName>Goto Date</DisplayName>
+      <Description>Go To a Specified Date</Description>
+      <Parameters>
+        <Parameter DataType="DateTime">
+          <Name>date</Name>
+          <DisplayName>Date</DisplayName>
+          <Description>Date</Description>
+          <IsRequired>true</IsRequired>
+        </Parameter>
+      </Parameters>
+    </Method>
+  </Methods>
+  <DefaultEventName>OnClick</DefaultEventName>
+  <Properties>
+    <Prop ID="ControlName" ValidationPattern="\S" ValidationMessage="InvalidName" 
+         refreshdisplay="true" DesignerValidate="SourceCode.Forms.Designers.validateControlName"
+         friendlyname="Name" type="string" category="Detail" inputlength="255" mappable="false"/>
+     <Prop ID="Width" friendlyname="Width" type="string" category="General" refreshdisplay="true" inputlength="20" setFunction="SetControlWidth" getFunction="GetControlWidth">
+      <Value>100%</Value>
+    </Prop>
+    <Prop ID="UseServerZone" friendlyname="Use Serv. Timezone" type="bool" category="General" refreshdisplay="true">
+      <Value>false</Value>
+    </Prop>
+    <Prop ID="IsVisible" friendlyname="Visible" type="bool" category="General" refreshdisplay="true" setFunction="SetControlIsVisible">
+      <Value>true</Value>
+    </Prop>
+    <Prop ID="IsReadOnly" friendlyname="Read-Only" type="bool" category="General" refreshdisplay="true" setFunction="SetControlIsReadOnly" mappable="true">
+      <Value>false</Value>
+    </Prop>
+    <Prop ID="LoadDataOnInit" friendlyname="Load on Init" type="bool" category="General" refreshdisplay="true" mappable="false">
+      <Value>true</Value>
+    </Prop>
+    <Prop ID="MonthView" friendlyname="Month" type="bool" category="Views" refreshdisplay="false" mappable="false">
+      <Value>true</Value>
+    </Prop>
+    <Prop ID="WeekView" friendlyname="Week" type="bool" category="Views" refreshdisplay="false" mappable="false">
+      <Value>true</Value>
+    </Prop>
+    <Prop ID="DayView" friendlyname="Day" type="bool" category="Views" refreshdisplay="false" mappable="false">
+      <Value>true</Value>
+    </Prop>
+    <Prop ID="BasicWeekView" friendlyname="Basic Week" type="bool" category="Views" refreshdisplay="false" mappable="false">
+      <Value>false</Value>
+    </Prop>
+    <Prop ID="BasicDayView" friendlyname="Basic Day" type="bool" category="Views" refreshdisplay="false" mappable="false">
+      <Value>false</Value>
+    </Prop>
+    <Prop ID="ListYearView" friendlyname="List Year" type="bool" category="Views" refreshdisplay="false" mappable="false">
+      <Value>false</Value>
+    </Prop>
+    <Prop ID="ListMonthView" friendlyname="List Month" type="bool" category="Views" refreshdisplay="false" mappable="false">
+      <Value>false</Value>
+    </Prop>
+    <Prop ID="ListWeekView" friendlyname="List Week" type="bool" category="Views" refreshdisplay="false" mappable="false">
+      <Value>true</Value>
+    </Prop>
+    <Prop ID="ListDayView" friendlyname="List Day" type="bool" category="Views" refreshdisplay="false" mappable="false">
+      <Value>false</Value>
+    </Prop>
+    <Prop ID="AssociationSO" mappable="false" friendlyname="SmartObject" type="complex" serverControlType="smartobject" category="Data Source" InitializeServerControl="initializeCalendarPropertyConfig" ClearServerControl="clearComplexPropertyConfig" ServerControl="SourceCodeANZ.Forms.Controls.PropertyConfiguration.CalendarConfig,SourceCodeANZ.Forms.Controls.Calendar" />
+    <Prop ID="AssociationMethod" mappable="false" friendlyname="Method" type="string" serverControlType="listmethod" category="Data Source" ReadOnly="true" />
+    <Prop ID="ValueProperty" mappable="false" friendlyname="Value" type="string" serverControlType="property" category="Data Source" ReadOnly="true" />
+    <Prop ID="DisplayTemplate" mappable="false" friendlyname="Display" type="string" serverControlType="property" category="Data Source" ReadOnly="true" />
+    <Prop ID="EventTitleField" friendlyname="EventTitleField" type="string" serverControlType="property" category="Data Source" ReadOnly="true" mappable="false"></Prop>
+    <Prop ID="EventStartField" friendlyname="EventStartField" type="string" serverControlType="property" category="Data Source" ReadOnly="true" mappable="false"></Prop>
+    <Prop ID="EventEndField" friendlyname="EventEndField" type="string" serverControlType="property" category="Data Source" ReadOnly="true" mappable="false"></Prop>
+    <Prop ID="EventAllDayField" friendlyname="EventAllDayField" type="string" serverControlType="property" category="Data Source" ReadOnly="true" mappable="false"></Prop>
+    <Prop ID="EventEditableField" friendlyname="EventEditableField" type="string" serverControlType="property" category="Data Source" ReadOnly="true" mappable="false"></Prop>
+    <Prop ID="EventSizeableField" friendlyname="EventSizeableField" type="string" serverControlType="property" category="Data Source" ReadOnly="true" mappable="false"></Prop>
+    <Prop ID="EventColorField" friendlyname="EventColorField" type="string" serverControlType="property" category="Data Source" ReadOnly="true" mappable="false"></Prop>
+    <Prop ID="EventTypeField" friendlyname="EventTypeField" type="string" serverControlType="property" category="Data Source" ReadOnly="true" mappable="false"></Prop>
+    <Prop ID="EventDataSourceField" friendlyname="EventDataSourceField" type="string" serverControlType="property" category="Data Source" ReadOnly="true" mappable="false"></Prop>
+    <Prop ID="EventDataSourceIDfield" friendlyname="EventDataSourceIDfield" type="string" serverControlType="property" category="Data Source" ReadOnly="true" mappable="false"></Prop>
+    <Prop ID="FilterSpec" friendlyname="Filter" type="string" category="Data Source" refreshdisplay="true"></Prop>
+    <Prop ID="MethodParameters" friendlyname="Method Params" type="string" category="Data Source" refreshdisplay="true"></Prop>
+    <Prop ID="SOCreateMethod" friendlyname="Create Method" type="string" category="Data Source" refreshdisplay="true"><Value>Create</Value></Prop>
+    <Prop ID="SOSaveMethod" friendlyname="Save Method" type="string" category="Data Source" refreshdisplay="true"><Value>Save</Value></Prop>
+    <Prop ID="MonthViewColFormat" friendlyname="Mon View Columns" type="string" category="Advanced" refreshdisplay="true" mappable="false"><Value>dddd</Value></Prop>
+    <Prop ID="WeekViewColFormat" friendlyname="Wk. View Columns" type="string" category="Advanced" refreshdisplay="true" mappable="false"><Value>ddd D/M</Value></Prop>
+    <Prop ID="DayViewColFormat" friendlyname="Day View Columns" type="string" category="Advanced" refreshdisplay="true" mappable="false"><Value>dddd D/M</Value></Prop>
+    <Prop ID="MonthViewTitleFormat" friendlyname="Mon View Title" type="string" category="Advanced" refreshdisplay="true" mappable="false">
+      <Value>MMMM YYYY</Value>
+    </Prop>
+    <Prop ID="WeekViewTitleFormat" friendlyname="Wk. View Title" type="string" category="Advanced" refreshdisplay="true" mappable="false">
+      <Value>MMM D YYYY</Value>
+    </Prop>
+    <Prop ID="DayViewTitleFormat" friendlyname="Day View Title" type="string" category="Advanced" refreshdisplay="true" mappable="false">
+      <Value>MMMM D YYYY</Value>
+    </Prop>
+    <Prop ID="Locale" friendlyname="Locale" type="drop" category="Advanced" refreshdisplay="true" mappable="true" SelectionValue="en|af|ar-dz|ar-kw|ar-ly|ar-ma|ar-sa|ar-tn|ar|bg|ca|cs|da|de-at|de-ch|de|el|en-au|en-ca|en-gb|en-ie|en-nz|es-do|es|et|eu|fa|fi|fr-ca|fr-ch|fr|gl|he|hi|hr|hu|id|is|it|ja|kk|ko|lt|lv|mk|ms-my|ms|nb|nl-be|nl|nn|pl|pt-br|pt|ro|ru|sk|sl|sr-cyrl|sr|sv|th|tr|uk|vi|zh-cn|zh-tw" SelectionText="Default (EN)|Afrikaans|Arabic (Algeria)|Arabic (Kuwait)|Arabic (Libya)|Arabic (Morocco)|Arabic (Saudi Arabia)|Arabic (Tunisia)|Arabic|Bulgarian|Catalan|Czech|Danish|German (Austria)|German (Switzerland)|German|Greek|English (Australia)|English (Canada)|English (United Kingdom)|English (Ireland)|English (New Zealand)|Spanish (Dominican Republic)|Spanish|Estonian|Basque|Persian|Finnish|French (Canada)|French (Switzerland)|French|Galician|Hebrew|Hindi|Croatian|Hungarian|Indonesian|Icelandic|Italian|Japanese|Kazakh|Korean|Lithuanian|Latvian|Macedonian|Malay (Malaysia)|Malay|Norwegian Bokmål|Dutch (Belgium)|Dutch|Norwegian Nynorsk|Polish|Portuguese (Brazil)|Portuguese|Romanian|Russian|Slovak|Slovenian|Serbian (Cyrillic)|Serbian|Swedish|Thai|Turkish|Ukrainian|Vietnamese|Chinese (China)|Chinese (Taiwan)">
+      <Value>en</Value>
+    </Prop>
+    <Prop ID="CustomNewEventUI" friendlyname="Custom Add UI" type="bool" category="Advanced" refreshdisplay="true" mappable="false"><Value>false</Value></Prop>
+    <Prop ID="Value" friendlyname="Value" type="string" category="Runtime Properties" refreshdisplay="true" ReadOnly="true"/>
+    <Prop ID="EventTitle" friendlyname="Event Title" type="string" category="Runtime Properties" refreshdisplay="true" ReadOnly="true"/>
+    <Prop ID="EventStart" friendlyname="Event Start" type="string" category="Runtime Properties" refreshdisplay="true" ReadOnly="true"/>
+    <Prop ID="EventEnd" friendlyname="Event End" type="string" category="Runtime Properties" refreshdisplay="true" ReadOnly="true"/>
+    <Prop ID="EventColor" friendlyname="Event Color" type="string" category="Runtime Properties" refreshdisplay="true" ReadOnly="true"/>
+    <Prop ID="EventType" friendlyname="Event Type" type="string" category="Runtime Properties" refreshdisplay="true" ReadOnly="true"/>
+    <Prop ID="EventAllDay" friendlyname="All Day" type="bool" category="Runtime Properties" refreshdisplay="true" ReadOnly="true"/>
+    <Prop ID="EventEditable" friendlyname="Editable" type="bool" category="Runtime Properties" refreshdisplay="true" ReadOnly="true"/>
+    <Prop ID="EventSizeable" friendlyname="EventSizeableField" type="bool" category="Runtime Properties" refreshdisplay="true" ReadOnly="true"/>
+  </Properties>
+</ControlType>

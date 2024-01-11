@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceCodeANZ.Forms.Controls.Calendar", "SourceCodeANZ.Forms.Controls.Calendar.csproj", "{B2DCE961-4373-4D7A-8E0C-86492423864D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		BuildAndCopy|Any CPU = BuildAndCopy|Any CPU
+		BuildAndCopy|x64 = BuildAndCopy|x64
+		BuildAndDeploy|Any CPU = BuildAndDeploy|Any CPU
+		BuildAndDeploy|x64 = BuildAndDeploy|x64
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.BuildAndCopy|Any CPU.ActiveCfg = BuildAndCopy|Any CPU
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.BuildAndCopy|Any CPU.Build.0 = BuildAndCopy|Any CPU
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.BuildAndCopy|x64.ActiveCfg = BuildAndCopy|x64
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.BuildAndCopy|x64.Build.0 = BuildAndCopy|x64
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.BuildAndDeploy|Any CPU.ActiveCfg = BuildAndDeploy|Any CPU
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.BuildAndDeploy|Any CPU.Build.0 = BuildAndDeploy|Any CPU
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.BuildAndDeploy|x64.ActiveCfg = BuildAndDeploy|x64
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.BuildAndDeploy|x64.Build.0 = BuildAndDeploy|x64
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.Debug|x64.ActiveCfg = Debug|x64
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.Debug|x64.Build.0 = Debug|x64
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.Release|x64.ActiveCfg = Release|x64
+		{B2DCE961-4373-4D7A-8E0C-86492423864D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FED31964-8638-4822-A243-944A779D60CB}
+	EndGlobalSection
+EndGlobal
